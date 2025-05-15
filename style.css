@@ -134,29 +134,70 @@ body {
 /* ----------------------------------
    GALLERY SECTION
 ---------------------------------- */
-.gallery {
+
+.work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
 
-.gallery-item {
-  overflow: hidden;
-  border-radius: 10px;
+.work-card {
   background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.gallery-item img {
+.work-card img {
   width: 100%;
-  height: 100%;
+  height: 180px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  display: block;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.1);
+.work-card:hover img {
+  transform: scale(1.05);
 }
+
+
+.work-caption {
+  padding: 16px;
+  background-color: #1f1f1f;
+  text-align: center;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.work-caption .work-title {
+  display: block;
+  font-weight: 700;
+  color: #00ff88;
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: bold
+}
+
+.work-caption .work-subtitle {
+  display: block;
+  font-weight: 500;
+  color: #cccccc;
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight:lighter;
+}
+
+
+.work-card:hover .work-subtitle {
+  color: #f4f4f4;
+}
+
+
+
+  
+
 
 /* ----------------------------------
    SOCIAL ICONS
