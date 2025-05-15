@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cristian Berrio | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <meta name="theme-color" content="#00ff88">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <div>
-      <h2>Cristian</h2>
-      <a class="nav-link" href="#athlete">🏋️ Athlete</a>
-      <a class="nav-link" href="#music">🎧 Music</a>
-      <a class="nav-link" href="#engineer">🧱 Engineer</a>
-      <a class="nav-link" href="#travel">✈️ Travel</a>
-      <a class="nav-link" href="#creator">🎥 Creator</a>
-      <a class="nav-link" href="#learner">📚 Learner</a>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Cristian Berrio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#categories">My Life</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="src/Logo.png" alt="Cristian Berrio Logo" class="hero-logo" />
+      <h1>Hi, I'm Cristian</h1>
+      <p>Athlete · DJ · Engineer · Creator · Explorer</p>
     </div>
-    <div>
-      <a class="nav-link" href="mailto:cristianberrio95@gmail.com">📩 Contact</a>
+  </section>
+  
+  <!-- Main Container -->
+  <main class="container">
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I’m a Colombian engineer, creator and dreamer living in the U.S. I blend physical discipline with technical skill and creative energy. This portfolio represents my growth across every area of my life.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section">
+      <h2>My Life Pillars</h2>
+      <div class="card-grid">
+        <div class="card" id="athlete"><h3>Athlete</h3><p>Daily workouts, running, and focus on strength.</p></div>
+        <div class="card" id="music"><h3>Music</h3><p>Passionate about techno and DJ culture.</p></div>
+        <div class="card" id="engineer"><h3>Engineer</h3><p>Environmental & Civil background, working in construction permits.</p></div>
+        <div class="card" id="travel"><h3>Travel</h3><p>Exploring the U.S. while building experiences and memories.</p></div>
+        <div class="card" id="creator"><h3>Creator</h3><p>Live content, podcast ideas, and personal branding.</p></div>
+        <div class="card" id="learner"><h3>Learner</h3><p>Always studying: tech, music, business, and English.</p></div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section">
+      <h2>My Work</h2>
+      <div class="gallery">
+        <div class="gallery-item"><img src="img1.jpg" alt="Work 1" /></div>
+        <div class="gallery-item"><img src="img2.jpg" alt="Work 2" /></div>
+        <div class="gallery-item"><img src="img3.jpg" alt="Work 3" /></div>
+        <div class="gallery-item"><img src="img4.jpg" alt="Work 4" /></div>
+        <div class="gallery-item"><img src="img5.jpg" alt="Work 5" /></div>
+        <div class="gallery-item"><img src="img6.jpg" alt="Work 6" /></div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaboration, projects or ideas:</p>
+      <p><a href="mailto:cristianberrio95@gmail.com">cristianberrio95@gmail.com</a></p>
+    </section>
+
+    <!-- Social Section -->
+    <section class="section" id="social">
+    <h2>Follow Me</h2>
+    <div class="social-icons">
+      <a href="https://instagram.com/feliipeberrio" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/felipeberrio" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/cristianfelipebm" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <!-- <a href="https://youtube.com/@tuusuario" target="_blank"><i class="fab fa-youtube"></i></a> -->
     </div>
-  </div>
-
-  <div class="main-content">
-    <section id="athlete" class="section">
-      <h2>Athlete</h2>
-      <p>I train to grow stronger every day — physically and mentally. Running, gym workouts, and active discipline help me stay focused and grounded in all areas of life.</p>
     </section>
-
-    <section id="music" class="section">
-      <h2>Music</h2>
-      <p>Music is not just a passion — it's part of my identity. From techno to DJing, I’m building my presence in the scene and connecting through beats and creativity.</p>
-    </section>
-
-    <section id="engineer" class="section">
-      <h2>Engineer</h2>
-      <p>Graduated as a Civil and Environmental Engineer from Colombia, I have worked in construction and permitting in the U.S., combining field experience with a problem-solving mindset.</p>
-    </section>
-
-    <section id="travel" class="section">
-      <h2>Travel</h2>
-      <p>I'm on a journey through the U.S., discovering states, people, and myself. Travel has opened my mind to new opportunities and stories worth sharing.</p>
-    </section>
-
-    <section id="creator" class="section">
-      <h2>Creator</h2>
-      <p>Whether it’s live content, photography, podcasting, or storytelling, I strive to inspire others through honest and bold creations that reflect my evolution.</p>
-    </section>
-
-    <section id="learner" class="section">
-      <h2>Learner</h2>
-      <p>Learning is my constant. I study English, technology, design, and business strategies to keep improving every version of myself.</p>
-    </section>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>

@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll(".nav-link");
-
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
       }
     });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll(".section, .card, .gallery-item").forEach(el => {
+    observer.observe(el);
   });
 });
